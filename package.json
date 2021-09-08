@@ -1,0 +1,24 @@
+{
+  "name": "slack-yomiage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild --bundle --platform=neutral ./src/index.js > index.js",
+    "dev": "miniflare index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "polka": "^0.5.2",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.24",
+    "ngrok": "^4.1.0"
+  }
+}
